@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>HireScape — The Internet Is Hiring</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://unpkg.com/globe.gl@2.32.3/dist/globe.gl.min.js"></script>
+</head>
+<body>
+
+<nav id="topNav">
+  <span class="brand">HireScape</span>
+  <div class="nav-links">
+    <select id="travelSelect" class="nav-btn">
+      <option value="world">🌍 World View</option>
+      <option value="india">🇮🇳 Travel to India</option>
+    </select>
+    <button class="nav-btn" id="universeBtn">✦ Build My Universe</button>
+  </div>
+</nav>
+
+<div id="categoryBar">
+  <button class="cat-chip active" data-cat="all">All</button>
+  <button class="cat-chip" data-cat="ai">AI / ML</button>
+  <button class="cat-chip" data-cat="web">Web Dev</button>
+  <button class="cat-chip" data-cat="data">Data</button>
+  <button class="cat-chip" data-cat="design">Design</button>
+  <button class="cat-chip" data-cat="sales">Sales / Marketing</button>
+  <button class="cat-chip" data-cat="hr">HR / Ops</button>
+</div>
+
+<header id="hero">
+  <h1>THE INTERNET<br>IS HIRING.</h1>
+  <p id="opportunityCount">Loading...</p>
+  <p class="hint">Drag to rotate · Scroll to zoom · Click a point to discover</p>
+</header>
+
+<main id="globeContainer"></main>
+
+<div id="overlay">
+  <div class="job-card" id="overlayCard"></div>
+</div>
+
+<div id="statsBar">
+  <div class="stat"><span id="statOpps">0</span><label>Opportunities</label></div>
+  <div class="stat"><span id="statCompanies">0</span><label>Companies</label></div>
+  <div class="stat"><span id="statCities">0</span><label>Cities</label></div>
+  <div class="stat"><span id="statUpdated">Today</span><label>Updated</label></div>
+</div>
+
+<div id="universePanel">
+  <div class="universe-inner">
+    <button class="close-btn" id="closeUniverse">✕</button>
+    <h2>What are you looking for?</h2>
+    <div id="prefChips">
+      <button class="pref-chip" data-pref="python">Python</button>
+      <button class="pref-chip" data-pref="ai">AI / ML</button>
+      <button class="pref-chip" data-pref="web">Web Development</button>
+      <button class="pref-chip" data-pref="data">Data Science</button>
+      <button class="pref-chip" data-pref="design">Design</button>
+      <button class="pref-chip" data-pref="remote">Remote</button>
+      <button class="pref-chip" data-pref="internship">Internship</button>
+      <button class="pref-chip" data-pref="sales">Sales</button>
+    </div>
+    <button id="generateBtn">Generate My Universe →</button>
+  </div>
+</div>
+
+<div id="matchToast"></div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
