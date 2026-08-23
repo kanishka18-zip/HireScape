@@ -1,0 +1,16 @@
+[
+  {
+    "internship_title": "Business Development",
+    "company_name": "Example Company Pvt Ltd",
+    "location": "Chennai",
+    "stipend": "₹ 8,000 /month",
+    "required_skills": ["Sales", "Communication", "MS Excel"]
+  },
+  {
+    "internship_title": "Human Resources (HR)",
+    "company_name": "Example Corp",
+    "location": "Remote",
+    "stipend": "₹ 5,000 /month",
+    "required_skills": ["Recruitment", "MS Office", "Communication"]
+  }
+]
